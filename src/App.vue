@@ -1,28 +1,42 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container">
+    <div class="columns">
+      <div class="column col-8 col-sm-12 col-mx-auto">
+        <Hero :count="iconCount"></Hero>
+      </div>
+      <div class="column col-10 col-sm-12 col-mx-auto">
+        <Search @icon-count="updateCount"></Search>
+      </div>
+    </div>
+    <div class="p-relative p-2" style="bottom: 0">
+      <div class="flex-centered p-2 text-muted">© Yu-Kai "Steven" Wang</div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Hero from "@/components/Hero";
+import Search from "@/components/Search";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Hero,
+    Search
+  },
+  data() {
+    return {
+      iconCount: 0
+    }
+  },
+  methods: {
+    updateCount(val) {
+      this.iconCount = val
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "~spectre.css/dist/spectre.min.css";
 </style>

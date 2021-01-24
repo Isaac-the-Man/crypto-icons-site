@@ -1,4 +1,4 @@
-# crypto-icons-search
+# crypto-icons-site
 
 ## Project setup
 ```
