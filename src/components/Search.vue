@@ -10,7 +10,7 @@
           <div class="tile tile-centered s-rounded mt-2" style="background-color: white">
             <div class="tile-icon">
               <figure class="avatar avatar-xl" style="background-color: white">
-                <img :src="require(`crypto-icons-plus/src/64/${coin.slug}.png`)" alt="coin icon">
+                <img :src="require(`crypto-icons-plus/src/128/${coin.slug}.png`)" alt="coin icon">
               </figure>
             </div>
             <div class="tile-content">
