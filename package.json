@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "crypto-icons-plus": "^0.1.4",
+    "crypto-icons-plus": "^1.0.0",
+    "crypto-icons-plus-128": "^1.0.0",
     "spectre.css": "^0.5.9",
     "vue": "^2.6.11"
   },
